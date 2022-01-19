@@ -32,4 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
 
       - name: Run Ansible Playbook
-        run: ansible-playbook sample-testing.yaml
+        run: ansible-playbook playbooks/sample-testing.yaml
