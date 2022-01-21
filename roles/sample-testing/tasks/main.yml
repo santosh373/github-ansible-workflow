@@ -1,0 +1,8 @@
+---
+- name: get current hostname
+  command: hostname
+  register : host_info
+
+- debug:
+    msg: "{{host_info}}"
+    
