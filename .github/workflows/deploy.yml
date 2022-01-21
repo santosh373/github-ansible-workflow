@@ -9,7 +9,10 @@ on:
   workflow_dispatch:
     inputs:
       envName:
-        description: 'Log level'     
+        description: 'environment'     
+        required: true
+      svcType:
+        description: 'service type'     
         required: true
 
 jobs:
