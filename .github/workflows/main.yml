@@ -25,4 +25,4 @@ jobs:
       - name: get ansible version
         run: ansible --version
       - name: Run Ansible Playbook
-        run: ansible-playbook sample-testing.yaml
+        run: ansible-playbook playbooks/sample-testing.yml
