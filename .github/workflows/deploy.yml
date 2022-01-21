@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: deploy
+
+# Controls when the workflow will run
+
+
+on: 
+  workflow_dispatch:
+    inputs:
+      envName:
+        description: 'Log level'     
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: get path
+        run: ls -la
+      - name: get ansible version
+        run: ansible --version
+      - name: Run Ansible Playbook
+        run: ansible-playbook playbooks/sample-testing.yml
